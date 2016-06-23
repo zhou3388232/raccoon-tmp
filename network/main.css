@@ -1,0 +1,118 @@
+html { font-family: Helvetica, Arial,"Microsoft YaHei"; color: #333; font-size: 14px; }
+body { overflow-x: hidden; }
+
+.fl { float: left; }
+.fr { float: right; }
+.clear { clear: both; }
+.page-width { max-width: 980px; margin: 0 auto; position: relative; }
+h1 { text-indent: -9999px; position: absolute; }
+h2 { font-size: 38px; }
+h3 { font-size: 30px; }
+h4 { font-size: 24px; }
+p { line-height: 30px; }
+a:link, a:hover, a:active, a:visited { color: #333; }
+.pic img { width: 100%; height: auto; }
+.btn {  }
+.btn a { display: inline-block; border: 1px solid #333; color: #333; padding: 15px 40px; }
+.btn a:hover { color: #fff; background-color: #333; }
+
+/* 头部 */
+.header { position: fixed; width: 100%; background-color: #fff; z-index: 1; }
+.header .logo a { display: block; height: 70px; padding-left: 50px; font-size: 0; }
+.header .logo img { height: 112px; margin-top: -22px; }
+.header .tel i { float: left; color: #fff; width: 28px; height: 28px; line-height: 30px; text-align: center; margin: 21px 10px; font-size: 18px; background-color: #39967e; border-radius: 50%; }
+.header .tel a { display: inline-block; padding: 26px 50px 26px 0; font-size: 18px; font-family: Verdana; font-weight: bold; }
+.header .topnav .menu-ra-container { float: left; }
+.header .topnav .menu { float: right; }
+.header .menu > li { float: left; width: 120px; position: relative; }
+.header .menu > li > a { display: block; height: 70px; line-height: 75px; text-align: center; transition: height 0.3s linear,line-height 0.3s linear; }
+.header .menu > li > a:hover { background-color: rgba(57, 151, 127, 0.15); }
+.header .menu > li.current-menu-item > a {background-color: #40ACAF; color: #fff; }
+.header.fix { top: 0; box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.2); }
+/* 主导航2级菜单 */
+.header .menu .sub-menu { position: absolute; width: 100%; top: 90px; opacity: 0; visibility: hidden; transition: all 0.2s ease; }
+.header .menu > li:hover .sub-menu { opacity: 1; top: 70px; box-shadow: 2px 3px 3px 1px rgba(0,0,0,0.2); visibility: visible; }
+.header .menu .sub-menu li a { display: block; padding: 15px 10px; text-align: left; background: #fff; border-bottom: 1px solid #CBCBCB; }
+.header .menu .sub-menu li:first-child a { border-top: 1px solid #CBCBCB; }
+.header .menu .sub-menu li a:hover { background: #EDEDED; }
+/* 移动端菜单按钮 */
+.header .topnav .navtoggle { display: none; }
+
+/* main */
+/*banner*/
+.main .banner { position: relative; height: 610px; padding-top: 70px; background: #DFE9E8 url(intel-banner.png) center bottom no-repeat; }
+.home .main .banner { background-image: url(../../uploads/2016/06/intel-banner.png); }
+
+.main h2 { display: inline-block; padding: 0 20px 8px; border-bottom: 1px solid #39967e; }
+
+
+/* 底部 */
+.footer { padding: 20px 0; text-align: center; background-color: #F4F4F4 ; color: #666; }
+.footer .pic { width: 148px; padding: 20px 0; }
+.footer .text { width: 644px; margin-left: 168px; }
+.footer .text > div { border-bottom: 1px solid #ccc; }
+.footer .text > div:last-child { border-bottom: none; }
+.footer .text ul { display: inline-block; margin: 0 auto; text-align: center; }
+.footer .text li { float: left; margin: 0 10px; }
+.footer .text li:nth-child(2) { float: right; }
+.footer .text li a { color: #333; }
+.footer .text li a:hover { color: #000; text-decoration: underline; }
+.footer .text .link li a { display: block; padding: 20px 0;  }
+.footer .text .contact-info { padding: 10px 0; }
+.footer .text .contact-info ul { width: 70%; }
+.footer .text .contact-info li a { display: block; padding: 10px 0; }
+.footer .copyright { padding-top: 10px; }
+.footer .copyright span { display: block; padding-top: 10px; }
+
+/* 主页 */
+.main div[class^="home"] { margin: 70px 0; position: relative; }
+.main .title { text-align: center; padding-bottom: 50px; }
+.main .title-en { display: block; padding-top: 8px; margin-top: -0.5px; border-top: 1px solid #e0e0e0; color: #aaa; text-transform: uppercase; }
+
+.home .banner .btn { position: absolute; left: 50%; top: 380px; margin-left: 40px; }
+.home .banner .btn a { color: #fff; border-color: #fff; font-size: 20px; transition: all .3s; }
+.home .banner .btn a:hover { color: #25A5A7 ; background-color: #fff; }
+
+.home-service .list li { float: left; position: relative; width: 33.3%; text-align: center; }
+.home-service .list li .pic { width: 40%; margin: 0 auto; }
+.home-service .list dl { padding: 10px 35px 0; }
+.home-service .list dt { padding-bottom: 20px; font-size: 24px; }
+.home-service .list dd { color: #999; line-height: 20px;}
+
+.home-case .list li { text-align: left; margin: 80px 0; position: relative; }
+.home-case .list .pic { float: left; width: 43%; }
+.home-case .list .text { float: right; width: 57%; }
+.home-case .list ul li:nth-child(even) .pic { float: right; }
+.home-case .list ul li:nth-child(even) .text { float: left; }
+.home-case .list .pic img { height: 400px; width: auto; position: absolute; top: 0; bottom: 0; margin: auto 0; }
+.home-case .list li p { color: #666; margin:20px 0; line-height: 24px; }
+
+.home-process ol { position: absolute; top: 40px; left: 19%; width: 100%; }
+.home-process ol li,
+.home-process ul li { float: left; width: 20%; }
+.home-process ul li .bg { display: block; width: 135px; height: 135px; margin: 0 auto; background: #fff url(images/cooperation.png) left top no-repeat; border: 3px solid; border-radius: 50%; overflow: hidden; }
+.home-process ul li:nth-child(1) .bg { background-position: 10px 20px; }
+.home-process ul li:nth-child(2) .bg { background-position: -102px 20px; }
+.home-process ul li:nth-child(3) .bg { background-position: -237px 18px; }
+.home-process ul li:nth-child(4) .bg { background-position: -364px 20px; }
+.home-process ul li:nth-child(5) .bg { background-position: -462px 20px; }
+.home-process ul li h4 { text-align: center; color:#333; font-size: 18px; margin: 20px 0; }
+.home-process ul li p { width: 75%; margin: 0 auto; color:#999; line-height: 20px;  }
+
+.home-partner .list li { float: left; position: relative; width: 20%; height:120px; text-align:center; background: #fff url(http://www.raccoon-tech.com/wp-content/uploads/2016/06/partner.png) no-repeat; overflow: hidden; }
+.home-partner .list li:nth-child(1) { background-position: 0px 0px; }
+.home-partner .list li:nth-child(2) {background-position: -196px 0px;}
+.home-partner .list li:nth-child(3) {background-position: -392px 0px;}
+.home-partner .list li:nth-child(4) {background-position: -588px 0px;}
+.home-partner .list li:nth-child(5) {background-position: -784px 0px;}
+.home-partner .list li:nth-child(6) { background-position: 0px -120px; }
+.home-partner .list li:nth-child(7) { background-position: -196px -120px; }
+.home-partner .list li:nth-child(8) { background-position: -392px -120px; }
+.home-partner .list li:nth-child(9) { background-position: -588px -120px; }
+.home-partner .list li:nth-child(10) { background-position: -784px -120px; }
+.home-partner .list li:nth-child(11) { background-position: 0px -240px; }
+.home-partner .list li:nth-child(12) { background-position:-196px -240px; }
+.home-partner .list li:nth-child(13) { background-position: -392px -240px; }
+.home-partner .list li:nth-child(14) { background-position: -588px -240px; }
+.home-partner .list li:nth-child(15) { background-position: -784px -240px; }
+.home-partner li div { display: none; position: absolute; background: #333; background: rgba(75,75,75,0.1); width: 100%; height: 100%; }
